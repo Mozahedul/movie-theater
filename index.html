@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Movie Theater</title>
+  </head>
+  <body>
+    <header id="header">
+      <h1 id="logo">Theater</h1>
+      <nav>
+        <ul>
+          <li><a href="#">Movie</a></li>
+          <li><a href="#">Series</a></li>
+          <li><a href="#">Episode</a></li>
+        </ul>
+      </nav>
+
+      <section id="movieSearch">
+        <input
+          id="input-movie"
+          type="text"
+          placeholder="Enter movie or series"
+        />
+        <button id="searchBtn" type="submit">🔍 Search</button>
+      </section>
+    </header>
+    <section id="banner-sliders">
+      <div class="banner-item">
+        <div class="banner-description">
+          <h2>Star wars</h2>
+          <p>The best movie ever!</p>
+          <p class="banner-rating-stars">⭐⭐⭐⭐⭐</p>
+          <div class="banner-buttons">
+            <button class="watch-now-btn">▶️ Watch Now</button>
+            <button class="watch-now-btn trailer-btn">Trailer</button>
+          </div>
+        </div>
+        <img
+          alt="#"
+          src="https://www.studioremarkable.com/wp-content/uploads/2015/12/Star-Wars-7-Poster.jpg"
+        />
+      </div>
+    </section>
+
+    <section id="movie-section"></section>
+    <section id="series-section"></section>
+
+    <!-- Load when page load -->
+    <section id="now-playing-list"></section>
+    <section id="popular-list"></section>
+    <section id="latest-release"></section>
+
+    <script src="./theater.js" type="module"></script>
+  </body>
+</html>
